@@ -56,7 +56,7 @@ var RedisClient = function(conf){
                 })
             }
             return p.then(function () {
-                logger.info('接收', JSON.stringify(messages));
+                //logger.info('接收', JSON.stringify(messages));
                 _.forEach(messages, function(message){
                     if (action.type == 'request'){
                         var request = {
@@ -73,6 +73,8 @@ var RedisClient = function(conf){
                         self.emit('event_' + message.action, event);
                     }else if (action.type == 'response'){
                         self.emit('response', messages);
+                    }else{
+                        logger.warn('未知类型', message);
                     }
                 })
 
