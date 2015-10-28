@@ -1,0 +1,21 @@
+{
+  "name": "mtc-common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://wing_kung@bitbucket.org/aztone/wxt-common.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.8.0",
+    "log4js": "^0.6.24",
+    "q": "^1.4.0",
+    "redis": "^0.12.1"
+  }
+}
